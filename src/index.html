@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    body {
+      background-color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .canvas-container {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .game-canvas {
+      margin-left: 12.5%;
+    }
+
+    .program-container {
+      width: 75%;
+      margin: auto;
+    }
+
+    #start-button {
+      font-size: 16px;
+      height: 35px;
+      background-color: #006600;
+      color: #eee;
+    }
+
+    #upload-button {
+      font-size: 16px;
+      height: 35px;
+      background-color: #666600;
+      color: #eee;
+    }
+  </style>
+
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+
+  <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
+
+</head>
+
+<body>
+  <div class="canvas-container">
+  </div>
+  <div class="program-container">
+    <button id="start-button">Start</button>
+    <input id="rom-upload" type="file"/>
+  </div>
+</body>
+
+</html>
